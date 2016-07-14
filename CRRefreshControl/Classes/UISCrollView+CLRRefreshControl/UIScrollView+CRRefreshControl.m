@@ -67,11 +67,11 @@ static NSString * const kCRAssocatedKeyInfiniteRefresh     = @"CRAssocatedKeyInf
     [self setcr_pullToRefresh:refresher];
 }
 
-- (void)cr_addPullToRefreshWithHandler:(CRRefreshHandler)handler type:(CRRefreshType)type {
-    [self cr_addPullToRefreshWithHandler:handler animation:CRRefreshAnimationWithType(type)];
+- (void)cr_addPullToRefreshWithType:(CRRefreshType)type handler:(CRRefreshHandler)handler {
+    [self cr_addPullToRefreshWithAnimation:CRRefreshAnimationWithType(type) handler:handler];
 }
 
-- (void)cr_addPullToRefreshWithHandler:(CRRefreshHandler)handler animation:(CRRefreshAnimation*)animation {
+- (void)cr_addPullToRefreshWithAnimation:(CRRefreshAnimation*)animation handler:(CRRefreshHandler)handler {
     [self cr_addPullToRefreshWithHandler:handler];
     [self.cr_pullToRefresh setRefreshAnimation:animation];
 }
@@ -83,11 +83,11 @@ static NSString * const kCRAssocatedKeyInfiniteRefresh     = @"CRAssocatedKeyInf
     [self setcr_bottomPullToRefresh:refresher];
 }
 
-- (void)cr_addBottomPullToRefreshWithHandler:(CRRefreshHandler)handler type:(CRRefreshType)type {
-    [self cr_addBottomPullToRefreshWithHandler:handler animation:CRRefreshAnimationWithType(type)];
+- (void)cr_addBottomPullToRefreshWithType:(CRRefreshType)type handler:(CRRefreshHandler)handler {
+    [self cr_addBottomPullToRefreshWithAnimation:CRRefreshAnimationWithType(type) handler:handler];
 }
 
-- (void)cr_addBottomPullToRefreshWithHandler:(CRRefreshHandler)handler animation:(CRRefreshAnimation*)animation {
+- (void)cr_addBottomPullToRefreshWithAnimation:(CRRefreshAnimation*)animation handler:(CRRefreshHandler)handler {
     [self cr_addBottomPullToRefreshWithHandler:handler];
     [self.cr_bottomPullToRefresh setRefreshAnimation:animation];
 }
@@ -102,11 +102,11 @@ static NSString * const kCRAssocatedKeyInfiniteRefresh     = @"CRAssocatedKeyInf
     [self setcr_infiniteRefresh:refresher];
 }
 
-- (void)cr_addInfiniteRefreshWithHandler:(CRRefreshHandler)handler type:(CRRefreshType)type {
-    [self cr_addInfiniteRefreshWithHandler:handler animation:CRRefreshAnimationWithType(type)];
+- (void)cr_addInfiniteRefreshWithType:(CRRefreshType)type handler:(CRRefreshHandler)handler {
+    [self cr_addInfiniteRefreshWithAnimation:CRRefreshAnimationWithType(type) handler:handler];
 }
 
-- (void)cr_addInfiniteRefreshWithHandler:(CRRefreshHandler)handler animation:(CRRefreshAnimation*)animation {
+- (void)cr_addInfiniteRefreshWithAnimation:(CRRefreshAnimation*)animation handler:(CRRefreshHandler)handler {
     [self cr_addInfiniteRefreshWithHandler:handler];
     [self.cr_infiniteRefresh setRefreshAnimation:animation];
 }

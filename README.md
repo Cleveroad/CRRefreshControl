@@ -65,7 +65,31 @@ you can call it separately.
 [self.tableView.cr_infiniteRefresh stopRefresh];
 ```
 
+* You can choose one of the default animation
 
+```Objective-C
+// will use one of the default animation 
+[self.tableView cr_addPullToRefreshWithType:CRRefreshType_Star handler:^{
+
+}];
+
+// will use default animation (similar to native UIRefreshControl, but not the same ;) )
+[self.tableView cr_addPullToRefreshWithType:CRRefreshType_Default handler:^{
+
+}];
+```
+
+* CRRefreshControl support `UIAppearance`
+
+// You can change default animatin by another default or your custom animation
+
+```Objective-C
+// now instead by default instead of CRRefreshType_Default will be used CRRefreshType_Star
+CRRefreshAnimation *animation = CRRefreshAnimationWithType(CRRefreshType_Star);
+
+// here animation will be coppied, you should set all properties before you call setter
+[[CRPullToRefresh appearance] setRefreshAnimation:animation];
+```
 
 
 

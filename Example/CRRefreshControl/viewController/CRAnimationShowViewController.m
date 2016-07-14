@@ -118,28 +118,27 @@ static NSString * const kCellIdentifier = @"cellIdentifier";
 
 - (void)configurePullToRefresh {
     if  (self.isPullToRefreshTopEnabled) {
-        [self.tableView cr_addPullToRefreshWithHandler:^{
+        [self.tableView cr_addPullToRefreshWithType:self.type handler:^{
             NSLog(@"pulltorefresh handler was called = )");
             [self reloadDates];
-            
-        } type:self.type];
+        }];
     }
     
     if (self.isPullToRefreshBottomEnabled) {
-        [self.tableView cr_addBottomPullToRefreshWithHandler:^{
+        [self.tableView cr_addBottomPullToRefreshWithType:self.type handler:^{
             NSLog(@"bottom pulltorefresh handler was called = )");
             [self loadDates];
-            
-        } type:self.type];
+        }];
     }
+    
 }
 
 - (void)configureInfiteScroll {
     if ( self.isInfiniteScrollBottomEnabled ) {
-        [self.tableView cr_addInfiniteRefreshWithHandler:^{
+        [self.tableView cr_addInfiniteRefreshWithType:self.type handler:^{
             NSLog(@"bottom infinite scroll handler was called = )");
             [self loadDates];
-        } type:self.type];
+        }];
     }
     
 }

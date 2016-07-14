@@ -29,19 +29,19 @@
 #pragma mark - Adding PullToRefresh
 // by default will add refresher to TOP
 - (void)cr_addPullToRefreshWithHandler:(CRRefreshHandler)handler;
-- (void)cr_addPullToRefreshWithHandler:(CRRefreshHandler)handler type:(CRRefreshType)type;
-- (void)cr_addPullToRefreshWithHandler:(CRRefreshHandler)handler animation:(CRRefreshAnimation*)animation;
+- (void)cr_addPullToRefreshWithType:(CRRefreshType)type handler:(CRRefreshHandler)handler;
+- (void)cr_addPullToRefreshWithAnimation:(CRRefreshAnimation*)animation handler:(CRRefreshHandler)handler;
 
 - (void)cr_addBottomPullToRefreshWithHandler:(CRRefreshHandler)handler;
-- (void)cr_addBottomPullToRefreshWithHandler:(CRRefreshHandler)handler type:(CRRefreshType)type;
-- (void)cr_addBottomPullToRefreshWithHandler:(CRRefreshHandler)handler animation:(CRRefreshAnimation*)animation;
+- (void)cr_addBottomPullToRefreshWithType:(CRRefreshType)type handler:(CRRefreshHandler)handler;
+- (void)cr_addBottomPullToRefreshWithAnimation:(CRRefreshAnimation*)animation handler:(CRRefreshHandler)handler;
 
 
 
 #pragma mark - Adding InfiniteRefresh
 - (void)cr_addInfiniteRefreshWithHandler:(CRRefreshHandler)handler;
-- (void)cr_addInfiniteRefreshWithHandler:(CRRefreshHandler)handler type:(CRRefreshType)type;
-- (void)cr_addInfiniteRefreshWithHandler:(CRRefreshHandler)handler animation:(CRRefreshAnimation*)animation;
+- (void)cr_addInfiniteRefreshWithType:(CRRefreshType)type handler:(CRRefreshHandler)handler;
+- (void)cr_addInfiniteRefreshWithAnimation:(CRRefreshAnimation*)animation handler:(CRRefreshHandler)handler;
 
 
 

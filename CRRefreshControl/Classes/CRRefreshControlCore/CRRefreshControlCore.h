@@ -28,6 +28,7 @@ typedef void (^CRRefreshHandler)();
  @discussion You can use CRRefreshAnimationWithType() to create animation
  by setting a CRRefreshType, and you will get one of the default animations.
  Or you can inherits from CRRefreshAnimation and create your own animation = )
+ @b copy
  */
 @property (copy, nonatomic) __kindof CRRefreshAnimation *refreshAnimation;
 
