@@ -94,7 +94,7 @@ CRRefreshAnimation *animation = CRRefreshAnimationWithType(CRRefreshType_Star);
 
 * You can simply create your own animation just inherit `CRRefreshAnimation` and override some method of animation lifecycle as shown below
 
-```Objective C
+```Objective-C
 @interface CRTestAnimation ()
 
 @property (weak, nonatomic) UIView *scene;
