@@ -8,10 +8,10 @@ s.description      = "CRRefreshControl provides mechanism for CRPullToRefresh an
 and some default animations. You can you one of the or just create your own! Without deep in these classes,
 just inherit CRRefreshAnimation and implement requirement methods, then just allow CRRefreshControl to drive theirs life cycle"
 
-s.homepage         = "https://redmine.cleveroad.com:4443/CRpods/CRRefreshControl"
+s.homepage         = "https://github.com/Cleveroad/CRRefreshControl/tree/develop/dev_Pashinskiy"
 s.license          = 'MIT'
 s.author           = { "Dmitry Pashinskiy" => "pashinskiy.kh.cr@gmail.com" }
-s.source           = { :git => "https://redmine.cleveroad.com:4443/CRpods/CRRefreshControl.git", :tag => s.version.to_s }
+s.source           = { :git => "https://github.com/Cleveroad/CRRefreshControl.git", :tag => s.version.to_s }
 
 s.ios.deployment_target = '8.0'
 
