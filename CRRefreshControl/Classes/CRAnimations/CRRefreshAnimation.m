@@ -26,7 +26,7 @@
 
 + (instancetype)animation {
     // will call animation of heir class
-    return [self animation];
+    return [[self alloc] init];
 }
 
 #pragma mark - NSObject

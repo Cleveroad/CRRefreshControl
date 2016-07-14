@@ -24,6 +24,7 @@
 		6A3745541D378A5C00CDE1B8 /* CRAnimationShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3745511D378A5C00CDE1B8 /* CRAnimationShowViewController.m */; };
 		6A3745551D378A5C00CDE1B8 /* CRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3745531D378A5C00CDE1B8 /* CRSettingsViewController.m */; };
 		6A5F7A3F1D37AF4E009FA871 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F7A3E1D37AF4E009FA871 /* Launch Screen.storyboard */; };
+		6A5F7A441D37CECE009FA871 /* CRTestAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F7A431D37CECE009FA871 /* CRTestAnimation.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		6A3745521D378A5C00CDE1B8 /* CRSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSettingsViewController.h; sourceTree = "<group>"; };
 		6A3745531D378A5C00CDE1B8 /* CRSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSettingsViewController.m; sourceTree = "<group>"; };
 		6A5F7A3E1D37AF4E009FA871 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		6A5F7A421D37CECE009FA871 /* CRTestAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTestAnimation.h; sourceTree = "<group>"; };
+		6A5F7A431D37CECE009FA871 /* CRTestAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRTestAnimation.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A1A786FD408977B5F3B1232E /* Pods_CRRefreshControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRRefreshControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62722A4A1A2546A18E1ABEC /* CRRefreshControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CRRefreshControl.podspec; path = ../CRRefreshControl.podspec; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				6003F5A6195388D20070C39A /* CRViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				6A5F7A421D37CECE009FA871 /* CRTestAnimation.h */,
+				6A5F7A431D37CECE009FA871 /* CRTestAnimation.m */,
 			);
 			name = "Example for CRRefreshControl";
 			path = CRRefreshControl;
@@ -359,6 +364,7 @@
 				6A3745541D378A5C00CDE1B8 /* CRAnimationShowViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CRViewController.m in Sources */,
+				6A5F7A441D37CECE009FA871 /* CRTestAnimation.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				6A3745551D378A5C00CDE1B8 /* CRSettingsViewController.m in Sources */,
 			);

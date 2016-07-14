@@ -9,6 +9,7 @@
 #import "CRViewController.h"
 #import "CRSettingsViewController.h"
 #import "CRRefreshControl.h"
+#import "CRTestAnimation.h"
 
 
 static NSString * const kCRSettingsSegue = @"CRSettingsSegueID";
@@ -33,8 +34,8 @@ static NSString * const kCellIdentifier = @"cellIdentifier";
     [super viewDidLoad];
     self.numbers = @[@"DefaultAnimation", @"StarAnimation"];
     
-    CRRefreshAnimation *animation = CRRefreshAnimationWithType(CRRefreshType_Star);
-    
+//    CRRefreshAnimation *animation = CRRefreshAnimationWithType(CRRefreshType_Star);
+    CRTestAnimation *animation = [CRTestAnimation animation];
     [[CRPullToRefresh appearance] setRefreshAnimation:animation];
     
     
