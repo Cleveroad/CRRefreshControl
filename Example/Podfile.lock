@@ -1,0 +1,14 @@
+PODS:
+  - CRRefreshControl (0.1.0)
+
+DEPENDENCIES:
+  - CRRefreshControl (from `../`)
+
+EXTERNAL SOURCES:
+  CRRefreshControl:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CRRefreshControl: c6c153be823b1241fbd2415e1287963823cbcde5
+
+COCOAPODS: 0.39.0
