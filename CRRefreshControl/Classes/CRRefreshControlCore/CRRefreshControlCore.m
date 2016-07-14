@@ -25,6 +25,7 @@
     _refreshAnimation = refreshAnimation.copy;
     
     _loadingView = [_refreshAnimation sceneForAnimation];
+    [_refreshView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [_refreshView addSubview:_loadingView];
     
     _loadingViewSize = _loadingView.frame.size;
