@@ -59,6 +59,7 @@ typedef void (^CRRefreshHandler)();
 
 
 - (instancetype)init __attribute__((unavailable("use -initWithScrollView:  instead")));
++ (instancetype)new __attribute__((unavailable("use -initWithScrollView:  instead")));
 
 @end
 

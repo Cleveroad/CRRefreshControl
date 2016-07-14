@@ -7,11 +7,9 @@
 //
 
 #import "CRViewController.h"
-
-#import "CRRefreshControlCore.h"
 #import "CRSettingsViewController.h"
+#import "CRRefreshControl.h"
 
-#import "UIScrollView+CRRefreshControl.h"
 
 static NSString * const kCRSettingsSegue = @"CRSettingsSegueID";
 static NSString * const kCellIdentifier = @"cellIdentifier";

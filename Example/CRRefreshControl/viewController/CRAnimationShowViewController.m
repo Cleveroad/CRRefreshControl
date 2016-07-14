@@ -7,7 +7,7 @@
 //
 
 #import "CRAnimationShowViewController.h"
-#import "UIScrollView+CRRefreshControl.h"
+#import "CRRefreshControl.h"
 
 // test values
 static const NSUInteger kAmountOfCells  = 5;

@@ -29,6 +29,8 @@
     return [self animation];
 }
 
+#pragma mark - NSObject
+
 - (id)copy{
     id animationCopy = [[[self class] alloc] init];
     return [self copyObject:animationCopy withClass:[self class]];
@@ -53,7 +55,6 @@
         return [self copyObject:object withClass:[AnimClass superclass]];
     }
 }
-
 
 
 

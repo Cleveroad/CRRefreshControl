@@ -20,6 +20,55 @@ it, simply add the following line to your Podfile:
 pod "CRRefreshControl"
 ```
 
+```Objective-C
+    #import "CRRefreshControl.h"
+```
+
+
+## Usage
+
+### CRRefreshControl
+
+* Mechanism of `CRRefreshContol` based on work with `UIScrollView`, so you can use it for `UITableView` and `UICollectionView`
+    
+```Objective-C
+// for default pull to refresh
+[self.tableView cr_addPullToRefreshWithHandler:^{
+    
+}];
+
+// for bottom pull to refresh
+[self.tableView cr_addBottomPullToRefreshWithHandler:^{
+
+}];
+
+// for default (bottom) infinite scroll
+[self.tableView cr_addInfiniteRefreshWithHandler:^{
+
+}];
+```
+
+* To stop refreshing simply call method of scrollView `cr_stopRefresh` this will send stop to all CRRefreshControls or 
+you can call it separately.
+
+```Objective-C
+// for all refresh controls
+[self.tableView cr_stopRefresh];
+
+// for default pull to refresh
+[self.tableView.cr_pullToRefresh stopRefresh];
+
+// for bottom pull to refresh
+[self.tableView.cr_bottomPullToRefresh stopRefresh];
+
+// for default infinite scroll
+[self.tableView.cr_infiniteRefresh stopRefresh];
+```
+
+
+
+
+
 ## Author
 
 Dmitry Pashinskiy, pashinskiy.kh.cr@gmail.com
